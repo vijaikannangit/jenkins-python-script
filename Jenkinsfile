@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'python3 reverse.py'
+        sh 'python3 automerge-pr-on-approval.py'
       }
     }
     stage('Test') {
